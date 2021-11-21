@@ -1,0 +1,19 @@
+
+<div class="comment_box">
+  <p>
+    <strong><%= comment.commenter %></strong>
+    <span> said:</span>
+    
+  </p>
+
+  <p>
+    <%= comment.body %>
+  </p>
+
+  <p class="delete">
+    <%= link_to '[x]', [comment.article, comment],
+                method: :delete,
+                data: { confirm: "Are you sure?" } %>
+  </p>
+</div>
+

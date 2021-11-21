@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>Sam's Blog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,10 @@
   </head>
 
   <body>
+  <div class="navbar">
+    <span class="nav_item"><%=link_to 'Home', articles_path %></span>
+      Navbar
+  </div>
     <%= yield %>
   </body>
 </html>
